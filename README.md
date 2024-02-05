@@ -1,3 +1,6 @@
+# FERROTODO
+Este proyecto es un sistema web para la gestion de compra y venta de productos de construccion realizado en JAVA con SPRING BOOT
+
 # LEE ESTO PRIMERO
 Los siguientes puntos se deben considerar para el avance de este proyecto Spring Boot y React o Angular.
 
@@ -21,7 +24,7 @@ Todo el proyecto del frontend deben hacerlo dentro de la carpeta static/, a cont
 * Puedes hacerlo en React o Angular
 * No olvides que debes abrir la carpeta static/ en tu ide favorito y estaras listo para empezar y dejar volar tu imaginacion
 * Para ver tu avance puedes usar el LiveServer de VScode si lo usas.
-* No es necesario que levantes toooodo el proyecto Spring Boot para ver tu avance, y porque? confia en mi, cualquier proyecto fronted solo debes ponerlo en la carpeta static/ y todo funcionara normal, por lo demas no te preocupes, eso dejalo a los Banckends.
+* No es necesario que levantes toooodo el proyecto Spring Boot para ver tu avance, y porque? confia en mi, cualquier proyecto fronted solo debes ponerlo en la carpeta static/ y todo funcionara normal (lo que quiero decir es que arrastres la carpeta static/ a tu ide favorito o vsCode), por lo demas no te preocupes, eso dejalo a los Banckends.
 
 ### Logica de negocio de la empresa Ferrotodo (Dominio)
 * El Administrador se encarga de gestionar la empresa Ferrotodo
