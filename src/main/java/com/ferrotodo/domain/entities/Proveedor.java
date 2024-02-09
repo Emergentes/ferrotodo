@@ -6,5 +6,6 @@ public class Proveedor {
     private String nombre;
     private String direccion;
 
+    private Producto producto;
 
 }

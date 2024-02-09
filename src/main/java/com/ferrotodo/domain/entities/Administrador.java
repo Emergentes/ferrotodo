@@ -2,6 +2,8 @@ package com.ferrotodo.domain.entities;
 
 import com.ferrotodo.domain.enumer.Turno;
 
+import java.util.List;
+
 public class Administrador {
 
     private Long id;
@@ -10,7 +12,7 @@ public class Administrador {
     private Turno turno;
 
     //Aqui me pregunto a mi mismo, entre Admin y Ferreteria: ¿que quiero hacer?, registrar quien es el admin de cual ferreteria?
-
+    private List<GestionPersonal> gestionPersonals;
 
 
 }
