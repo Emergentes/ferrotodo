@@ -8,6 +8,6 @@ public class Ferreteria {
     private String nombre;
     private String ubucacion;
     private ClasificacionFerreteria categoria;
-    private Administrador administardor;
+
 
 }

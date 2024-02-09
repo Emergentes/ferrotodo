@@ -9,4 +9,6 @@ public class Cliente {
     private Long telefono;
     private TipoCliente tipoCliente;
 
+
+
 }

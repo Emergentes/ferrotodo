@@ -9,4 +9,8 @@ public class Administrador {
     private Long salario;
     private Turno turno;
 
+    //Aqui me pregunto a mi mismo, entre Admin y Ferreteria: ¿que quiero hacer?, registrar quien es el admin de cual ferreteria?
+
+
+
 }

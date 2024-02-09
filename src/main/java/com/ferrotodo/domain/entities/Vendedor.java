@@ -7,4 +7,5 @@ public class Vendedor {
     private String nombre;
     private Long telefono;
 
+
 }
