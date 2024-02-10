@@ -1,36 +1,66 @@
 # FERROTODO
-Este proyecto es un sistema web para la gestion de compra y venta de productos de construccion realizado en JAVA con SPRING BOOT
 
-# LEE ESTO PRIMERO
-Los siguientes puntos se deben considerar para el avance de este proyecto Spring Boot y React o Angular.
+**FERROTODO** es un sistema web para la gestión de compra y venta de productos de construcción desarrollado en **JAVA** con **SPRING BOOT**.
 
-* Si deseas agregar una nueva caracteristica o modificar algo, debes de crear tu propia rama apartir de la rama "master" para luego hacer el merge cuando creas haber terminado.
-* Antes de hacer un commit, el mensaje debe parecerse mas o menos asi:" Añadido las clases, caracteristicas y tal... ", "Agregado bla bla bla...", "Modificado el bla bla " bueno ya me entienden.
+## Antes de comenzar
 
-# Empecemos
+Asegúrate de leer estos puntos antes de avanzar en el proyecto:
 
+- Si deseas agregar una nueva característica o modificar algo, crea tu propia rama a partir de la rama "master" y luego realiza el merge cuando consideres que has terminado.
+- Antes de hacer un commit, asegúrate de que el mensaje del commit describa claramente lo que has hecho.
+
+## Empezando
+
+### Configuración de la base de datos
+
+1. Instala XAMPP para utilizar la base de datos. Por defecto, XAMPP incluye MariaSQL.
+2. Crea una base de datos llamada `bd_ferrotodo` desde phpMyAdmin o utilizando el siguiente comando SQL:
+
+```sql
+CREATE DATABASE bd_ferrotodo;
+```
+
+**NOTA:** MariaDB utiliza el puerto `3306` con la IP `localhost` de forma predeterminada. Tenlo en cuenta para la siguiente sección.
 
 ### Para levantar el proyecto
-Considedar las siguientes configuraciones
 
-* Si usas un ide para java con Maven, solo ejecuta el main() de la clase "FerroTodoApplication.java"
-* El proyecto ya tiene tomcat embebido que se levanta en el puerto localhost:8081 (puedes modificarlo en el archivo properties si lo deseas o si tienes algun conflicto con este puerto 8081)
-* Lo primero que se veras es el index que esta en la carpeta resources/static/ al introducir la url: http://localhost:8081/ despues de haber lebantado el proyecto
+1. Abre tu IDE favorito de Java que soporte Maven y ejecuta el método `main(...)` de la clase `FerroTodoApplication.java`.
+2. Spring Boot utiliza Tomcat embebido que se levanta en el puerto `8081` de forma predeterminada. Si necesitas cambiar el puerto, modifica el archivo `application.properties`:
+
+```properties
+server.port=8081
+```
+
+3. Después de ejecutar `main(...)`, verás el index en la carpeta `resources/static/` cuando ingreses a la URL: `http://localhost:8081/` en tu navegador.
+
+**NOTA:** Si necesitas agregar configuraciones adicionales de tu base de datos, como usuario o contraseña, agrégalas al archivo `application.properties` de la siguiente manera:
+
+```properties
+spring.datasource.url=jdbc:mariadb://localhost:3306/bd_ferrotodo
+spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+spring.datasource.username=root
+spring.datasource.password=
+```
+**NOTA:** Cambia `username=` y `password=` según corresponda a tu base de datos.
 
 ### Para los Frontends
-Todo el proyecto del frontend deben hacerlo dentro de la carpeta static/, a continuacion los consejos:
 
-* Puedes hacerlo en React o Angular
-* No olvides que debes abrir la carpeta static/ en tu ide favorito y estaras listo para empezar y dejar volar tu imaginacion
-* Para ver tu avance puedes usar el LiveServer de VScode si lo usas.
-* No es necesario que levantes toooodo el proyecto Spring Boot para ver tu avance, y porque? confia en mi, cualquier proyecto fronted solo debes ponerlo en la carpeta static/ y todo funcionara normal (lo que quiero decir es que arrastres la carpeta static/ a tu ide favorito o vsCode), por lo demas no te preocupes, eso dejalo a los Banckends.
+- Todos los archivos relacionados al frontend deben ser colocados dentro de la carpeta `static/`.
+- Puedes desarrollar en React o Angular.
+- Abre la carpeta `static/` en tu IDE favorito y comienza a trabajar.
+- Para ver tus avances, puedes usar LiveServer si estás utilizando VScode.
+- No es necesario levantar todo el proyecto Spring Boot para ver tus cambios en el frontend. Simplemente coloca tus archivos en la carpeta `static/`.
 
-### Logica de negocio de la empresa Ferrotodo (Dominio)
-* El Administrador se encarga de gestionar la empresa Ferrotodo
-* El Cliente llega a la empresa Ferrotodo y hace sus compras
-* La Ferreteria expone sus Productos en stock y los expone en la tienda fisica y en la web
-* El Proveedor se encarga de suministrar los Productos al la empresa Ferrotodo
-* El Vendedor de Ferrotodo se encarga de vender los Productos de la empresa
-* SI FALTA ALGO MAS EN CUANTO A LOS REQUERIMIENTOS FUNCIONALES, LO ESTARE ACTUALIZANDO...
+### Lógica de negocio de la empresa Ferrotodo (Dominio)
 
-### Este .md se ira actualizando...
+- El Administrador gestiona la empresa Ferrotodo.
+- El Cliente realiza compras en la empresa Ferrotodo.
+- La Ferretería expone sus productos en stock tanto en la tienda física como en la web.
+- El Proveedor suministra productos a la empresa Ferrotodo.
+- El Vendedor de Ferrotodo se encarga de vender los productos de la empresa.
+
+Si hay más requisitos funcionales, se irán actualizando en este documento.
+
+---
+
+Este archivo `.md` se actualizará conforme avance el proyecto.
