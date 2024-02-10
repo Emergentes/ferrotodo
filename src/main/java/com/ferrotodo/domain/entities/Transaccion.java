@@ -1,11 +1,11 @@
 package com.ferrotodo.domain.entities;
 
-public class Proveedor {
+public class Transaccion {
 
     private Long id;
-    private String nombre;
-    private String direccion;
 
     private Producto producto;
+    private Vendedor vendedor;
+    private Cliente cliente;
 
 }

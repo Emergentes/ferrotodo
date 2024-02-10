@@ -1,8 +1,9 @@
-package com.ferrotodo.domain.entities;
+package com.ferrotodo.models;
 
 import com.ferrotodo.domain.enumer.Turno;
 
 import java.util.List;
+
 
 public class Administrador {
 

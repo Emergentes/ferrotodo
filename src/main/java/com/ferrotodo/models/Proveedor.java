@@ -1,4 +1,4 @@
-package com.ferrotodo.domain.entities;
+package com.ferrotodo.models;
 
 public class Proveedor {
 
