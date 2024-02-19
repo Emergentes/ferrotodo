@@ -1,4 +1,4 @@
-package com.ferrotodo.port;
+package com.ferrotodo.domain.negocio;
 
 import com.ferrotodo.domain.entities.Producto;
 
